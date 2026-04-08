@@ -1,12 +1,6 @@
 {
-  "name": "inzva Week 11 — Deep Learning at Scale",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
-
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "dockerDashComposeVersion": "v2"
-    }
-  },
+  "name": "inzva Week 11 - Deep Learning at Scale",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
 
   "postCreateCommand": "bash .devcontainer/setup.sh",
   "postStartCommand": "bash .devcontainer/start.sh",
