@@ -9,6 +9,7 @@
   },
 
   "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
 
   "forwardPorts": [2222, 8000, 5000, 7860, 11434],
   "portsAttributes": {
