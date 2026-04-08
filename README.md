@@ -34,13 +34,6 @@ inzva-dlsg-week11/
 │   └── workflows/
 │       └── ci.yml          # CI/CD pipeline (Module 4)
 ├── docker-compose.yml      # Ollama + MLflow services
-├── index.html              # 📖 Interactive lab manual
-├── instructor.html         # 👩‍🏫 Instructor guide (confidential)
-├── print.html              # 🖨️ Print-friendly version
-├── solutions/              # ✅ Reference solutions
-│   ├── main.py             # Module 3 — FastAPI app
-│   ├── app.py              # Module 4 — Gradio frontend
-│   └── Dockerfile          # Module 4 — Container image
 └── README.md               # This file
 ```
 
