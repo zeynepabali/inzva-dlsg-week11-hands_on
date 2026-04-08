@@ -1,0 +1,37 @@
+{
+  "name": "inzva Week 11 — Deep Learning at Scale",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "dockerDashComposeVersion": "v2"
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  "forwardPorts": [2222, 8000, 5000, 7860, 11434],
+  "portsAttributes": {
+    "2222":  { "label": "SSH Demo",  "onAutoForward": "silent" },
+    "8000":  { "label": "FastAPI",   "onAutoForward": "notify" },
+    "5000":  { "label": "MLflow",    "onAutoForward": "notify" },
+    "7860":  { "label": "Gradio UI", "onAutoForward": "notify" },
+    "11434": { "label": "Ollama",    "onAutoForward": "silent" }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "editor.fontSize": 14,
+        "editor.formatOnSave": true,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
