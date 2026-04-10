@@ -30,10 +30,6 @@ inzva-dlsg-week11/
 ├── .devcontainer/          # Codespace environment config
 │   ├── devcontainer.json   # Python 3.11 + Docker-in-Docker
 │   └── setup.sh            # Auto-installs uv & htop
-├── .github/
-│   └── workflows/
-│       └── ci.yml          # CI/CD pipeline (Module 4)
-├── docker-compose.yml      # Ollama + MLflow services
 └── README.md               # This file
 ```
 
