@@ -50,14 +50,13 @@ During the session, you'll create these files inside `inzva-ai-microservice/`:
 
 | File | Module | Description |
 |------|--------|-------------|
-| `main.py` | 3 | FastAPI backend with system prompt + MLflow telemetry |
-| `app.py` | 4 | Gradio chat UI connecting to your API |
+| `docker-compose.yml` | 2 | Docker compose file for all services |
+| `api.py` | 3 | FastAPI backend with system prompt + MLflow telemetry |
+| `frontend.py` | 4 | Gradio chat UI connecting to your API |
 | `Dockerfile` | 4 | Container image for the FastAPI service |
+| `Dockerfile.frontend` | 4 | Container image for the FastAPI service |
 
-## 📚 Resources
 
-- [Lab Manual](index.html) — Follow along during the session
-- [Print Version](print.html) — PDF-printable reference
 
 ## 📝 License
 
