@@ -58,7 +58,6 @@ During the session, you'll create these files inside `inzva-ai-microservice/`:
 
 - [Lab Manual](index.html) — Follow along during the session
 - [Print Version](print.html) — PDF-printable reference
-- [Instructor Guide](instructor.html) — Teaching notes (instructors only)
 
 ## 📝 License
 
