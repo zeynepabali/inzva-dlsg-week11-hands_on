@@ -20,6 +20,12 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
+        env:
+          # We map the github variable to an env variable first
+          IMAGE_PATH: ghcr.io/${{ github.repository }}/inzva-ai-api:latest
         run: |
-          docker build -t ghcr.io/${{ env.REPO_LOWER }}/inzva-ai-api:latest .
-          docker push ghcr.io/${{ env.REPO_LOWER }}/inzva-ai-api:latest
+          # Use ${VAR,,} to lowercase the string in bash
+          LOWER_IMAGE_PATH=${IMAGE_PATH,,}
+          
+          docker build -t $LOWER_IMAGE_PATH .
+          docker push $LOWER_IMAGE_PATH
