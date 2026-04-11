@@ -21,5 +21,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ghcr.io/asaydam/inzva-ai-api:latest .
-          docker push ghcr.io/${{ github.repository }}/inzva-ai-api:latest
+          docker build -t ghcr.io/${{ env.REPO_LOWER }}/inzva-ai-api:latest .
+          docker push ghcr.io/${{ env.REPO_LOWER }}/inzva-ai-api:latest
