@@ -12,6 +12,7 @@ COPY api.py .
 COPY requirements.txt .
 
 # Install dependencies using uv
+# RUN uv pip install --system fastapi uvicorn pydantic httpx mlflow gradio
 RUN uv pip install --system -r requirements.txt
 
 # Expose the FastAPI port
